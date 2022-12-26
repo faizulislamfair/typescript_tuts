@@ -2,25 +2,12 @@
 // const message = "Hello TypeScript";
 // const msg = 'Remember JavaScript?';
 // console.log(message, msg, language);
-;
-var person = {
-    name: "Hibernate",
-    email: 'fair@gmail.com',
-    age: 22,
-    phone: ['123'],
-    address: {
-        presentAddress: 'parijat',
-        permanentAddress: 'padma'
-    },
-    favorites: [
-        {
-            type: 'food',
-            value: 'Kacchi'
-        },
-        {
-            type: 'player',
-            value: 'Neymar'
-        }
-    ],
-    isLoggedIn: true,
+var description = {};
+var friends = ['duck', 'panda'];
+var user = {
+    name: 'user',
+    email: 'user@example.com'
 };
+friends.forEach(function (item) {
+    description[item] = item + 'is flying';
+});

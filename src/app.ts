@@ -183,48 +183,82 @@
 
 
 
-interface Address {
-    presentAddress: string;
-    permanentAddress: string;
-}
+// interface Address {
+//     presentAddress: string;
+//     permanentAddress: string;
+// }
 
-interface Favorite {
-    type: "food" | "player" | "singer" | "actor";
-    value: string;
-}
+// interface Favorite {
+//     type: "food" | "player" | "singer" | "actor";
+//     value: string;
+// }
 
-interface Auth {
-    isLoggedIn: boolean;
-}
+// interface Auth {
+//     isLoggedIn: boolean;
+// }
 
-interface Person extends Auth {
+// interface Person extends Auth {
+//     name: string;
+//     age: number;
+//     phone: string | string[];
+//     email: string;
+//     address: Address;
+//     favorites: Favorite[];
+// };
+
+// const person: Person = {
+//     name: "Hibernate",
+//     email: 'fair@gmail.com',
+//     age: 22,
+//     phone: ['123'],
+//     address: {
+//         presentAddress: 'parijat',
+//         permanentAddress: 'padma'
+//     },
+//     favorites: [
+//         {
+//             type: 'food',
+//             value: 'Kacchi'
+//         },
+//         {
+//             type: 'player',
+//             value: 'Neymar'
+//         }
+//     ],
+//     isLoggedIn: true,
+// }
+
+
+
+interface User {
     name: string;
-    age: number;
-    phone: string | string[];
     email: string;
-    address: Address;
-    favorites: Favorite[];
-};
-
-const person: Person = {
-    name: "Hibernate",
-    email: 'fair@gmail.com',
-    age: 22,
-    phone: ['123'],
-    address: {
-        presentAddress: 'parijat',
-        permanentAddress: 'padma'
-    },
-    favorites: [
-        {
-            type: 'food',
-            value: 'Kacchi'
-        },
-        {
-            type: 'player',
-            value: 'Neymar'
-        }
-    ],
-    isLoggedIn: true,
 }
 
+// let user = {} as User;
+
+// user = {
+//     name: 'user',
+//     email: 'user@example.com'
+// }
+
+// user?.email;
+
+
+interface Description {
+    duck: string;
+    panda: string;
+}
+
+let description: Description = {} as Description;
+
+const friends = ['duck', 'panda'] as const;
+
+const user = {
+    name: 'user',
+    email: 'user@example.com'
+} as const;
+
+friends.forEach(item => {
+    description[item] = item + 'is flying';
+})
