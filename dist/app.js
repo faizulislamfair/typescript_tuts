@@ -46,15 +46,22 @@
 // pokemon.megaForm = false;
 // pokemon.moves = pokemon?.moves?.map(move => move.toUpperCase())
 // console.log(pokemon, pokemon.type, pokemon['moves']);
-var Friends;
-(function (Friends) {
-    Friends[Friends["Duck"] = 0] = "Duck";
-    Friends[Friends["Chicken"] = 1] = "Chicken";
-    Friends[Friends["Penguin"] = 2] = "Penguin";
-})(Friends || (Friends = {}));
-var Configs;
-(function (Configs) {
-    Configs["API_Key"] = "api_key";
-    Configs["Domain_Name"] = "domain_name";
-})(Configs || (Configs = {}));
-console.log(Friends.Penguin);
+// enum Friends {
+//     Duck,
+//     Chicken,
+//     Penguin
+// }
+// enum Configs {
+//     API_Key = "api_key",
+//     Domain_Name = "domain_name"
+// }
+// console.log(Friends.Penguin);
+// function add(num1: number, num2: number): void {
+//     console.log(num1 + num2);
+// }
+// add(10, 30);
+var add = function (num1, num2, num3) {
+    return num1 + num2 + num3;
+};
+var result = add(10, 30, 15);
+console.log(result);

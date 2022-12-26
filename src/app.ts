@@ -89,15 +89,34 @@
 // console.log(pokemon, pokemon.type, pokemon['moves']);
 
 
-enum Friends {
-    Duck,
-    Chicken,
-    Penguin
+// enum Friends {
+//     Duck,
+//     Chicken,
+//     Penguin
+// }
+
+// enum Configs {
+//     API_Key = "api_key",
+//     Domain_Name = "domain_name"
+// }
+
+// console.log(Friends.Penguin);
+
+
+
+// function add(num1: number, num2: number): void {
+//     console.log(num1 + num2);
+// }
+
+// add(10, 30);
+
+
+
+const add = (num1: number, num2: number, num3?: number): number => {
+    return num1 + num2 + num3!;
 }
 
-enum Configs {
-    API_Key = "api_key",
-    Domain_Name = "domain_name"
-}
+const result = add(10, 30, 15);
 
-console.log(Friends.Penguin);
+console.log(result);
+
