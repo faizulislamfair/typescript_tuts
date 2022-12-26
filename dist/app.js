@@ -2,8 +2,7 @@
 // const message = "Hello TypeScript";
 // const msg = 'Remember JavaScript?';
 // console.log(message, msg, language);
-var myName = 'Ataraxia';
-var arr = [""];
+;
 var person = {
     name: "Hibernate",
     email: 'fair@gmail.com',
@@ -22,5 +21,6 @@ var person = {
             type: 'player',
             value: 'Neymar'
         }
-    ]
+    ],
+    isLoggedIn: true,
 };

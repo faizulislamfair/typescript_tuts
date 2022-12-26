@@ -121,31 +121,90 @@
 // console.log(result);
 
 
-type MyName = string | number;
+// type MyName = string | number;
 
-let myName: MyName = 'Ataraxia';
-
-
-type arr = string[];
-
-const arr: arr = [""];
+// let myName: MyName = 'Ataraxia';
 
 
-type Person = {
+// type arr = string[];
+
+// const arr: arr = [""];
+
+
+// type Person = {
+//     name: string;
+//     age: number;
+//     phone: string | string[];
+//     email: string;
+//     address: {
+//         presentAddress: string;
+//         permanentAddress: string;
+//     };
+//     favorites: {
+//         type: "food" | "player" | "singer" | "actor";
+//         value: string;
+//     }[];
+// };
+
+
+// const person: Person = {
+//     name: "Hibernate",
+//     email: 'fair@gmail.com',
+//     age: 22,
+//     phone: ['123'],
+//     address: {
+//         presentAddress: 'parijat',
+//         permanentAddress: 'padma'
+//     },
+//     favorites: [
+//         {
+//             type: 'food',
+//             value: 'Kacchi'
+//         },
+//         {
+//             type: 'player',
+//             value: 'Neymar'
+//         }
+//     ]
+// }
+
+
+// interface Person {
+//     name: string;
+//     email: string;
+// }
+
+
+// let person: Person = {
+//    name: 'John',
+//    email: 'john@example.com'
+// }
+
+
+
+
+interface Address {
+    presentAddress: string;
+    permanentAddress: string;
+}
+
+interface Favorite {
+    type: "food" | "player" | "singer" | "actor";
+    value: string;
+}
+
+interface Auth {
+    isLoggedIn: boolean;
+}
+
+interface Person extends Auth {
     name: string;
     age: number;
     phone: string | string[];
     email: string;
-    address: {
-        presentAddress: string;
-        permanentAddress: string;
-    };
-    favorites: {
-        type: "food" | "player" | "singer" | "actor";
-        value: string;
-    }[];
+    address: Address;
+    favorites: Favorite[];
 };
-
 
 const person: Person = {
     name: "Hibernate",
@@ -165,5 +224,7 @@ const person: Person = {
             type: 'player',
             value: 'Neymar'
         }
-    ]
+    ],
+    isLoggedIn: true,
 }
+
