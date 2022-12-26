@@ -1,6 +1,6 @@
 const message = "Hello TypeScript";
 const msg = 'Remember JavaScript?';
-console.log(message, msg, language);
+// console.log(message, msg, language);
 
 
 
@@ -24,18 +24,31 @@ console.log(message, msg, language);
 
 // union types
 
-let category: number | string | boolean | [] | {};
+// let category: number | string | boolean | [] | {};
 
-category = 25;
+// category = 25;
 
-category = 'Pokemon';
+// category = 'Pokemon';
 
-category = false;
+// category = false;
 
-category = {};
+// category = {};
 
-category = [];
+// category = [];
 
 
 
+
+// let pokemons: string[] = ['Arceus', 'Dialga', 'Palkia'];
+
+// pokemons.push('Giratina');
+
+// const newPokemons = pokemons.map((pokemon, i) => i + 1 + '. ' + pokemon);
+
+// console.log(pokemons, newPokemons);
+
+
+let colors: [string, string, number, boolean, string];
+
+colors = ['Cyan', 'Crimson', 555, true, 'Grey'];
 
