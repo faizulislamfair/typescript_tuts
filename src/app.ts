@@ -112,11 +112,58 @@
 
 
 
-const add = (num1: number, num2: number, num3?: number): number => {
-    return num1 + num2 + num3!;
+// const add = (num1: number, num2: number, num3?: number): number => {
+//     return num1 + num2 + num3!;
+// }
+
+// const result = add(10, 30, 15);
+
+// console.log(result);
+
+
+type MyName = string | number;
+
+let myName: MyName = 'Ataraxia';
+
+
+type arr = string[];
+
+const arr: arr = [""];
+
+
+type Person = {
+    name: string;
+    age: number;
+    phone: string | string[];
+    email: string;
+    address: {
+        presentAddress: string;
+        permanentAddress: string;
+    };
+    favorites: {
+        type: "food" | "player" | "singer" | "actor";
+        value: string;
+    }[];
+};
+
+
+const person: Person = {
+    name: "Hibernate",
+    email: 'fair@gmail.com',
+    age: 22,
+    phone: ['123'],
+    address: {
+        presentAddress: 'parijat',
+        permanentAddress: 'padma'
+    },
+    favorites: [
+        {
+            type: 'food',
+            value: 'Kacchi'
+        },
+        {
+            type: 'player',
+            value: 'Neymar'
+        }
+    ]
 }
-
-const result = add(10, 30, 15);
-
-console.log(result);
-
