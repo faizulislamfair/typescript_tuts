@@ -230,10 +230,10 @@
 
 
 
-interface User {
-    name: string;
-    email: string;
-}
+// interface User {
+//     name: string;
+//     email: string;
+// }
 
 // let user = {} as User;
 
@@ -245,20 +245,20 @@ interface User {
 // user?.email;
 
 
-interface Description {
-    duck: string;
-    panda: string;
-}
+// interface Description {
+//     duck: string;
+//     panda: string;
+// }
 
-let description: Description = {} as Description;
+// let description: Description = {} as Description;
 
-const friends = ['duck', 'panda'] as const;
+// const friends = ['duck', 'panda'] as const;
 
-const user = {
-    name: 'user',
-    email: 'user@example.com'
-} as const;
+// const user = {
+//     name: 'user',
+//     email: 'user@example.com'
+// } as const;
 
-friends.forEach(item => {
-    description[item] = item + 'is flying';
-})
+// friends.forEach(item => {
+//     description[item] = item + 'is flying';
+// })
